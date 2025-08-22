@@ -1,0 +1,20 @@
+[project]
+name = "videos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.8.1",
+    "codecarbon>=3.0.2",
+    "diffusers>=0.34.0",
+    "ftfy>=6.3.1",
+    "hf-transfer>=0.1.9",
+    "huggingface-hub>=0.33.0",
+    "opencv-python>=4.12.0.88",
+    "pandas>=2.3.0",
+    "safetensors>=0.5.3",
+    "sentencepiece>=0.2.1",
+    "torch>=2.7.1",
+    "transformers>=4.52.4",
+]
