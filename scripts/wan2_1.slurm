@@ -4,8 +4,6 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem-per-cpu=32G
 #SBATCH --mail-type=ALL
-#SBATCH --output=/fsx/jdelavande/logs/slurm-%j-%x.out
-#SBATCH --mail-user=julien.delavande@huggingface.co
 #SBATCH --qos normal
 
 # Liste de prompts

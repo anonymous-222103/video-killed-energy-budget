@@ -4,8 +4,6 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem-per-cpu=32G
 #SBATCH --mail-type=ALL
-#SBATCH --output=/fsx/jdelavande/logs/slurm-%j-%x.out
-#SBATCH --mail-user=julien.delavande@huggingface.co
 #SBATCH --qos normal
 
 
@@ -33,7 +31,7 @@ readarray -t PROMPTS < <(jq -r '.PROMPTS[]' prompts.json)
 
 PREFIX='exp7_'
 RUNS=5
-WARMUP=2
+WARMUP=2    
 
 # Compteur
 i=1
