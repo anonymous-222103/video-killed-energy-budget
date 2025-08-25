@@ -8,3 +8,5 @@ __pycache__
 *.log
 .venv/
 .git/
+slurm-*.out
+.env
