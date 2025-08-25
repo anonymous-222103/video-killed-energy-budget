@@ -4,8 +4,6 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem-per-cpu=32G
 #SBATCH --mail-type=ALL
-#SBATCH --output=/fsx/jdelavande/logs/slurm-%j-%x.out
-#SBATCH --mail-user=julien.delavande@huggingface.co
 #SBATCH --qos normal
 
 PROMPTS=(
@@ -50,7 +48,7 @@ for prompt in "${PROMPTS[@]}"; do
             --flow_shift 5 \
             --out_csv "$OUT_CSV" \
             --out_video "$OUT_VIDEO" \
-            --output_path "/fsx/jdelavande/benchlab/videos/data"
+            --output_path "./../data"
     done
 
     ((i++))

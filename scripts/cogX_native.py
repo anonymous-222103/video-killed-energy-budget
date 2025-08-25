@@ -21,4 +21,4 @@ video = pipe(
     generator=torch.Generator(device="cuda").manual_seed(42),
 ).frames[0]
 
-export_to_video(video, "/fsx/jdelavande/benchlab/videos/data/output_cogX_native.mp4", fps=8)
+export_to_video(video, "./../data/output_cogX_native.mp4", fps=8)

@@ -2,7 +2,7 @@ import torch
 from diffusers import MochiPipeline
 from diffusers.utils import export_to_video
 
-OUTPUT_PATH = "/fsx/jdelavande/benchlab/videos/data"
+OUTPUT_PATH = "./../data"
 OUT_VIDEO = "gorilla_mochi.mp4"
 
 pipe = MochiPipeline.from_pretrained("genmo/mochi-1-preview")

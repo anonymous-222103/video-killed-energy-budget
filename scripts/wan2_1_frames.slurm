@@ -47,7 +47,7 @@ for prompt in "${PROMPTS[@]}"; do
             --flow_shift 5 \
             --out_csv "$OUT_CSV" \
             --out_video "$OUT_VIDEO" \
-            --output_path "/fsx/jdelavande/benchlab/videos/data"
+            --output_path "./../data"
     done
 
     ((i++))

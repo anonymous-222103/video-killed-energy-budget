@@ -18,4 +18,4 @@ pipe = AnimateDiffPipeline.from_pretrained(base, motion_adapter=adapter, torch_d
 pipe.scheduler = EulerDiscreteScheduler.from_config(pipe.scheduler.config, timestep_spacing="trailing", beta_schedule="linear")
 
 output = pipe(prompt="A girl smiling", guidance_scale=1.0, num_inference_steps=step)
-export_to_gif(output.frames[0], "/fsx/jdelavande/benchlab/videos/data/animateDiff_native.gif")
+export_to_gif(output.frames[0], "./../data/animateDiff_native.gif")

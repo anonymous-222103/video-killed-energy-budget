@@ -106,7 +106,7 @@ if __name__ == "__main__":
     parser.add_argument("--runs", type=int, default=1)
     parser.add_argument("--out_csv", type=str, default=f"animatediff_results_{now}.csv")
     parser.add_argument("--out_gif", type=str, default=f"animatediff_gif_{now}.gif")
-    parser.add_argument("--output_path", type=str, default="/fsx/jdelavande/benchlab/videos/data")
+    parser.add_argument("--output_path", type=str, default="./../data")
     parser.add_argument("--no_save_gif", action="store_true", help="Disable saving GIF")
     parser.add_argument("--warmup", type=int, default=1)
     args = parser.parse_args()

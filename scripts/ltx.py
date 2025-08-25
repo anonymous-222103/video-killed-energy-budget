@@ -219,7 +219,7 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--out_csv", type=str   , default=f"results_Lightricks-LTX-Video_{now}.csv")
     parser.add_argument("--out_video", type=str, default=f"output_Lightricks-LTX-Video_{now}.mp4")
-    parser.add_argument("--output_path", type=str, default="/fsx/jdelavande/benchlab/videos/data")
+    parser.add_argument("--output_path", type=str, default="./../data")
     parser.add_argument("--no_save_video", action="store_true", help="Disable saving video")
     parser.add_argument("--fps", type=int, default=24)
     parser.add_argument("--warmup", type=int, default=1, help="Number of warmup runs to skip before measuring performance")

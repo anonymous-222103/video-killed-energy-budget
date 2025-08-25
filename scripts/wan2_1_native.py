@@ -3,7 +3,7 @@ from diffusers.utils import export_to_video
 from diffusers import AutoencoderKLWan, WanPipeline
 from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler
 
-OUTPUT_PATH = "/fsx/jdelavande/benchlab/videos/data"
+OUTPUT_PATH = "./../data"
 OUT_VIDEO = "wan2_1_1_3B.mp4"
 
 # Available models: Wan-AI/Wan2.1-T2V-14B-Diffusers, Wan-AI/Wan2.1-T2V-1.3B-Diffusers

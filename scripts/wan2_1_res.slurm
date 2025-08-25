@@ -19,7 +19,6 @@ NUM_FRAMES=81
 GUIDANCE=5.0
 FPS=15
 
-# Liste de résolutions (au moins 50), toutes multiples de 8
 RESOLUTIONS=(
   "256x256" "320x240" "384x384" "448x256" "512x512"
   "576x320" "640x360" "704x384" "768x432" "832x480"
@@ -65,7 +64,7 @@ for prompt in "${PROMPTS[@]}"; do
             --flow_shift 5 \
             --out_csv "$OUT_CSV" \
             --out_video "$OUT_VIDEO" \
-            --output_path "/fsx/jdelavande/benchlab/videos/data"
+            --output_path "./../data"
     done
 
     ((i++))
