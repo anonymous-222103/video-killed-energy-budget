@@ -46,13 +46,6 @@ The following models were evaluated in this benchmark:
    - Alternatively, run the script directly, adjusting parameters as needed.
 3. **Analyze Results**:
    - Results will be saved in the `data/` folder as CSV files.
-   - Use `plot.ipynb` to visualize and compare results.
    - Explore `results.ipynb` for detailed analysis.
-
-## Citation
-
-If you use these scripts or results in your research, please cite the repository or link to the [Benchlab project](https://github.com/JulienDelavande/benchlab).
-
----
 
 For more details on parameters and model usage, refer to each model’s Hugging Face page or the script headers.
